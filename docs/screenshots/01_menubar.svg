@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="360" viewBox="0 0 540 360">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="540" height="360" fill="#1e1e2e"/>
+
+  <!-- macOS menubar -->
+  <rect x="0" y="0" width="540" height="28" fill="#2a2a3a"/>
+  <text x="14" y="19" font-family="-apple-system,sans-serif" font-size="13" font-weight="600" fill="#e0e0e0">🍎</text>
+  <text x="44" y="19" font-family="-apple-system,sans-serif" font-size="12" fill="#e0e0e0">Finder  ファイル  編集  表示</text>
+  <!-- menubar right icons -->
+  <text x="390" y="19" font-family="-apple-system,sans-serif" font-size="11" fill="#c0c0c0">wifi  battery  time</text>
+  <!-- MacMeetingMemo icon highlighted -->
+  <rect x="470" y="4" width="58" height="20" rx="4" fill="#3b5bdb" opacity="0.85"/>
+  <text x="476" y="18" font-family="-apple-system,sans-serif" font-size="11" font-weight="600" fill="#ffffff">📋 Memo</text>
+
+  <!-- Menu window (角丸・borderless) -->
+  <rect x="370" y="34" width="158" height="178" rx="10" fill="#f7f8fa" filter="url(#shadow)" stroke="#d0d0d8" stroke-width="0.5"/>
+
+  <!-- Menu header -->
+  <rect x="370" y="34" width="158" height="36" rx="10" fill="#3b5bdb"/>
+  <rect x="370" y="54" width="158" height="16" fill="#3b5bdb"/>
+  <text x="449" y="56" font-family="-apple-system,sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">MacMeetingMemo</text>
+  <text x="449" y="70" font-family="-apple-system,sans-serif" font-size="9" fill="#c0d0ff" text-anchor="middle">会議記録を開始しましょう</text>
+
+  <!-- Menu items -->
+  <rect x="378" y="78" width="142" height="28" rx="6" fill="#3b5bdb" opacity="0.9"/>
+  <text x="449" y="96" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">＋ 新規会議を開始</text>
+
+  <line x1="384" y1="114" x2="512" y2="114" stroke="#e0e0e8" stroke-width="0.8"/>
+
+  <text x="386" y="130" font-family="-apple-system,sans-serif" font-size="10" fill="#888">最近の会議</text>
+  <rect x="378" y="136" width="142" height="24" rx="4" fill="#f0f1f5"/>
+  <text x="449" y="152" font-family="-apple-system,sans-serif" font-size="11" fill="#333" text-anchor="middle">↩ 07/20 14:31 週次定例</text>
+
+  <line x1="384" y1="168" x2="512" y2="168" stroke="#e0e0e8" stroke-width="0.8"/>
+  <text x="449" y="184" font-family="-apple-system,sans-serif" font-size="11" fill="#666" text-anchor="middle">⚙ 設定</text>
+  <text x="449" y="202" font-family="-apple-system,sans-serif" font-size="11" fill="#999" text-anchor="middle">✕ 終了</text>
+
+  <!-- Caption -->
+  <text x="270" y="330" font-family="-apple-system,sans-serif" font-size="12" fill="#888" text-anchor="middle">メニューバーアイコンをクリックするとメニューが開きます</text>
+</svg>

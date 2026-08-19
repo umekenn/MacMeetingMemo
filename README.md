@@ -3,9 +3,7 @@
 [![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-lightgrey)](https://github.com/umekenn/MacMeetingMemo)
 [![Swift](https://img.shields.io/badge/Swift-5.9-orange)](https://swift.org)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-
-> **ダウンロード（ビルド済み）**
-> [MacMeetingMemo-v1.0.0.zip](https://github.com/umekenn/MacMeetingMemo/raw/main/releases/MacMeetingMemo-v1.0.0.zip) — zip を解凍して `MacMeetingMemo.app` を `/Applications` にコピーするだけで使えます。
+[![Release](https://img.shields.io/github/v/release/umekenn/MacMeetingMemo)](https://github.com/umekenn/MacMeetingMemo/releases/latest)
 
 会議中のスクリーンショットとテキストメモを、軽量に記録する macOS ネイティブアプリ。
 
@@ -13,7 +11,108 @@ Apple Silicon Mac 向けに最適化されたシンプルな会議記録ツー�
 
 ---
 
-## 機能概要
+## ⬇️ ダウンロード
+
+**[MacMeetingMemo-v1.0.0.zip](https://github.com/umekenn/MacMeetingMemo/releases/latest/download/MacMeetingMemo-v1.0.0.zip)** をダウンロードして zip を解凍し、`MacMeetingMemo.app` を `/Applications` にコピーするだけで使えます。
+
+> **初回起動時の注意**  
+> macOS のセキュリティ確認が出た場合は、Finder で右クリック → 「開く」を選択してください。  
+> また、キャプチャ機能には「画面収録の許可」が必要です。  
+> `システム設定 > プライバシーとセキュリティ > 画面収録` で `MacMeetingMemo` を許可 → アプリ再起動。
+
+---
+
+## 📸 画面イメージ
+
+### 1. メニューバーから操作
+
+<img src="docs/screenshots/01_menubar.svg" alt="メニューバーメニュー" width="540"/>
+
+メニューバーの **📋 Memo** アイコンをクリックするとメニューが開きます。新規会議の開始、直近の会議の再開、設定への移動が可能です。
+
+---
+
+### 2. フローティングコントロールバー
+
+<img src="docs/screenshots/02_controlbar.svg" alt="コントロールバー" width="540"/>
+
+会議中は幅 500px / 高さ 48px の小型ウィンドウが画面最前面に常時表示されます。  
+左から **経過時間 / キャプチャ対象 / 枚数 / 自動間隔 / 📷ボタン / Memoボタン** が並びます。  
+**右クリック**でコンテキストメニュー（即時キャプチャ・OCR・間隔変更・会議終了）が開きます。
+
+---
+
+### 3. テキストメモの入力
+
+<img src="docs/screenshots/03_memo.svg" alt="メモ展開" width="540"/>
+
+**Memo ボタン**でコントロールバー直下にテキストエリアが展開します。  
+キャプチャのたびに `📷 HH:mm filename` マーカーが自動挿入され、日本語・英語入力に対応しています。常時自動保存のため、保存操作は不要です。
+
+---
+
+### 4. 新規会議の開始
+
+<img src="docs/screenshots/04_new_meeting.svg" alt="新規会議セットアップ" width="540"/>
+
+会議名・キャプチャ対象・自動キャプチャ間隔を設定して開始します。  
+**キャプチャ対象は必須選択**です。Teams・Zoom・ブラウザなど任意のウィンドウをウィンドウ単位で選択できます。
+
+---
+
+## 🚀 使い方
+
+### ステップ 1 — アプリを起動する
+
+`MacMeetingMemo.app` を起動するとメニューバーに **📋 Memo** アイコンが表示されます（Dock には表示されません）。
+
+### ステップ 2 — 会議を開始する
+
+1. メニューバーの **📋 Memo** をクリック
+2. **＋ 新規会議を開始** を選択
+3. **会議名**（任意）を入力
+4. **キャプチャ対象**を選択（Teams・Zoom・Safari など任意のウィンドウ、またはディスプレイ全体）
+5. **自動キャプチャ間隔**を設定（OFF / 30秒 / 1分 / 5分）
+6. **会議を開始** をクリック
+
+→ フローティングコントロールバーが画面最前面に表示され、記録が始まります。
+
+### ステップ 3 — 会議中の操作
+
+| 操作 | 方法 |
+|------|------|
+| 手動スクリーンショット | コントロールバーの **📷** ボタンを押す |
+| テキストメモを入力 | **Memo** ボタンを押してテキストエリアを開き、そのまま入力 |
+| OCR（文字起こし） | コントロールバーを右クリック → **直近キャプチャをOCR** |
+| 自動キャプチャ間隔を変更 | 右クリック → **自動キャプチャ間隔を変更** |
+| 会議を終了 | 右クリック → **会議を終了** |
+
+### ステップ 4 — 出力ファイルを確認する
+
+会議終了後、保存先フォルダ（デフォルト: `~/Documents/MacMeetingMemo/`）に会議フォルダが生成されます。
+
+```
+~/Documents/MacMeetingMemo/
+└── 2025-07-20_143103_週次定例/
+    ├── memo.txt          # 会議中のメモ（プレーンテキスト）
+    ├── captures/         # スクリーンショット置き場
+    │   ├── 143214.png
+    │   └── 143651.png
+    ├── session.md        # タイムライン（Markdownで人が読む形式）
+    └── session.json      # 全イベントのメタデータ（OCR結果含む）
+```
+
+- **`memo.txt`**: メモ欄の生テキスト。📷 マーカー・🔍 マーカーも含む
+- **`session.md`**: 開始時刻・会議名・キャプチャ一覧・メモを時系列に並べたMarkdown
+- **`session.json`**: 全イベント（開始/終了/スクリーンショット/メモ/OCR結果）をJSONで記録。AI連携や後処理向け
+
+### 会議を途中から再開する
+
+メニューバーの **📋 Memo** → 「最近の会議」から再開したいセッションを選択すると、メモ内容が復元されて記録を継続できます。
+
+---
+
+## ⚙️ 機能概要
 
 ### メニューバー常駐
 
@@ -58,30 +157,7 @@ Apple Silicon Mac 向けに最適化されたシンプルな会議記録ツー�
 
 ---
 
-## 出力ファイル構成
-
-会議終了時、以下の構成でファイルが生成されます。
-
-```
-~/Documents/MacMeetingMemo/
-└── 2025-07-20_143103_週次定例/
-    ├── memo.txt          # 会議中のメモ（プレーンテキスト）
-    ├── captures/         # スクリーンショット置き場
-    │   ├── 143214.png
-    │   └── 143651.png
-    ├── session.md        # タイムライン（Markdownで人が読む形式）
-    └── session.json      # 全イベントのメタデータ（OCR結果含む）
-```
-
-- **`memo.txt`**: メモ欄の生テキスト。📷 マーカー・🔍 マーカーも含む
-- **`session.md`**: 開始時刻・会議名・キャプチャ一覧・メモを時系列に並べたMarkdown
-- **`session.json`**: 全イベント（開始/終了/スクリーンショット/メモ/OCR結果）を JSON で記録。AI連携や後処理向け
-
-フォルダ名に会議名を含めるかどうかは設定で変更可能です。
-
----
-
-## 設定項目
+## ⚙️ 設定項目
 
 | 設定 | デフォルト | 内容 |
 |------|-----------|------|
@@ -95,17 +171,18 @@ Apple Silicon Mac 向けに最適化されたシンプルな会議記録ツー�
 
 ---
 
-## ビルド方法
+## 🔨 ビルド方法
 
 ### 動作環境
 
 - macOS 13 (Ventura) 以上
 - Xcode 15 以上
+- Apple Silicon Mac
 
 ### 手順
 
 ```bash
-git clone https://github.com/<your-username>/MacMeetingMemo.git
+git clone https://github.com/umekenn/MacMeetingMemo.git
 cd MacMeetingMemo/MeetingMemo
 open MeetingMemo.xcodeproj
 ```
@@ -116,15 +193,7 @@ Xcode で開き、**Signing & Capabilities** でチームを設定してから `
 
 ---
 
-## 初回起動時の注意
-
-初回起動時に macOS から**画面収録の許可**を求められます。
-
-`システム設定 > プライバシーとセキュリティ > 画面収録` で `MacMeetingMemo` を許可してください。許可後、アプリを再起動するとキャプチャが有効になります。
-
----
-
-## プロジェクト構成
+## 🏗 プロジェクト構成
 
 ```
 MeetingMemo/
@@ -153,7 +222,7 @@ MeetingMemo/
 
 ---
 
-## 技術スタック
+## 🛠 技術スタック
 
 | 項目 | 内容 |
 |------|------|
@@ -167,6 +236,6 @@ MeetingMemo/
 
 ---
 
-## ライセンス
+## 📄 ライセンス
 
 [MIT](LICENSE)

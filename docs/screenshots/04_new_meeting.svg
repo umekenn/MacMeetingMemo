@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="380" viewBox="0 0 540 380">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#00000050"/>
+    </filter>
+  </defs>
+
+  <!-- Background (desktop) -->
+  <rect width="540" height="380" fill="#1a2744"/>
+  <rect x="0" y="0" width="540" height="26" fill="#2a2a3aee"/>
+  <text x="14" y="18" font-family="-apple-system,sans-serif" font-size="13" fill="#e0e0e0">🍎</text>
+  <text x="430" y="18" font-family="-apple-system,sans-serif" font-size="10" fill="#c0c0c0">📋  wifi  🔋  14:30</text>
+
+  <!-- New Meeting Sheet -->
+  <rect x="90" y="40" width="360" height="320" rx="14" fill="#1c1c2e" filter="url(#shadow)" stroke="#3a3a5c" stroke-width="0.8"/>
+
+  <!-- Header -->
+  <text x="270" y="72" font-family="-apple-system,sans-serif" font-size="15" font-weight="700" fill="#e0e8ff" text-anchor="middle">新規会議を開始</text>
+
+  <!-- Meeting name -->
+  <text x="110" y="104" font-family="-apple-system,sans-serif" font-size="11" fill="#9090b8">会議名（任意）</text>
+  <rect x="110" y="110" width="320" height="30" rx="6" fill="#252535" stroke="#4a4a6e" stroke-width="1"/>
+  <text x="122" y="130" font-family="-apple-system,sans-serif" font-size="12" fill="#d0d8ff">週次定例</text>
+  <!-- cursor -->
+  <rect x="197" y="115" width="1.5" height="20" fill="#7c9ff5"/>
+
+  <!-- Capture target -->
+  <text x="110" y="158" font-family="-apple-system,sans-serif" font-size="11" fill="#9090b8">キャプチャ対象 *必須</text>
+
+  <!-- Display option -->
+  <rect x="110" y="164" width="320" height="28" rx="6" fill="#252535" stroke="#4a4a6e" stroke-width="0.8"/>
+  <circle cx="126" cy="178" r="6" fill="none" stroke="#5566aa" stroke-width="1.5"/>
+  <text x="138" y="182" font-family="-apple-system,sans-serif" font-size="11" fill="#c0c8f0">内蔵Retinaディスプレイ (2560×1600)</text>
+
+  <!-- Window option (selected) -->
+  <rect x="110" y="196" width="320" height="28" rx="6" fill="#1e2a50" stroke="#3b5bdb" stroke-width="1.2"/>
+  <circle cx="126" cy="210" r="6" fill="none" stroke="#3b5bdb" stroke-width="1.5"/>
+  <circle cx="126" cy="210" r="3" fill="#3b5bdb"/>
+  <text x="138" y="214" font-family="-apple-system,sans-serif" font-size="11" fill="#d0e0ff">Microsoft Teams - 週次定例 2025/07...</text>
+
+  <rect x="110" y="228" width="320" height="28" rx="6" fill="#252535" stroke="#4a4a6e" stroke-width="0.8"/>
+  <circle cx="126" cy="242" r="6" fill="none" stroke="#5566aa" stroke-width="1.5"/>
+  <text x="138" y="246" font-family="-apple-system,sans-serif" font-size="11" fill="#c0c8f0">Safari - Google Meet</text>
+
+  <!-- Auto interval -->
+  <text x="110" y="276" font-family="-apple-system,sans-serif" font-size="11" fill="#9090b8">自動キャプチャ間隔</text>
+  <rect x="110" y="282" width="320" height="30" rx="6" fill="#252535" stroke="#4a4a6e" stroke-width="1"/>
+  <text x="122" y="302" font-family="-apple-system,sans-serif" font-size="12" fill="#d0d8ff">1分</text>
+  <text x="416" y="302" font-family="-apple-system,sans-serif" font-size="12" fill="#8888aa">▾</text>
+
+  <!-- Start button -->
+  <rect x="110" y="324" width="320" height="20" rx="8" fill="#3b5bdb"/>
+  <text x="270" y="338" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">会議を開始</text>
+
+  <text x="270" y="372" font-family="-apple-system,sans-serif" font-size="11" fill="#8888aa" text-anchor="middle">キャプチャ対象を選択しないと開始できません</text>
+</svg>
