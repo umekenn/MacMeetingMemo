@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA00BB11CC22DD33EE44FF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF55EE44DD33CC22BB11AA00 /* Assets.xcassets */; };
 		CBCCA41F555046ACB60419DA /* ControlBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338218D243B411EBDE4334E /* ControlBarView.swift */; };
 		491EB463C03F49729877BE46 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F992D9A694A9286C26EF3 /* MenuBarPopoverView.swift */; };
 		D088B9B3C973463A9D62EFA2 /* NewMeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52059DCA3814D529F67BE60 /* NewMeetingView.swift */; };
@@ -36,6 +37,7 @@
 		E8AE9A9A9D77435A9EA8B7F5 /* MeetingMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingMemoApp.swift; sourceTree = "<group>"; };
 		B2653135DD844EF7BF1DEF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC675835F2B490F896A9132 /* MeetingMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeetingMemo.entitlements; sourceTree = "<group>"; };
+		FF55EE44DD33CC22BB11AA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EECF4A74DFD4793AEB99D4B /* MacMeetingMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacMeetingMemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			children = (
 				B2653135DD844EF7BF1DEF66 /* Info.plist */,
 				9EC675835F2B490F896A9132 /* MeetingMemo.entitlements */,
+				FF55EE44DD33CC22BB11AA00 /* Assets.xcassets */,
 			);
 			name = Resources;
 			path = Resources;
@@ -124,6 +127,7 @@
 			buildPhases = (
 				D35F641C4FDE438BB6F48D35 /* Sources */,
 				64C4F985FA984ADF97672EEA /* Frameworks */,
+				9900AABB1122CCDD3344EEFF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +187,17 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXResourcesBuildPhase section */
+		9900AABB1122CCDD3344EEFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00BB11CC22DD33EE44FF55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
 		7DB8D761C1104897BC3775C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -234,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/MeetingMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -256,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/MeetingMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
