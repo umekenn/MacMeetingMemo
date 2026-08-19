@@ -24,12 +24,6 @@ Apple Silicon Mac 向けに最適化されたシンプルな会議記録ツー�
 
 ## 📸 画面イメージ
 
-### アプリ概要
-
-<img src="docs/screenshots/overview.png" alt="MacMeetingMemo 概要" width="720"/>
-
----
-
 ### 1. メニューバーから操作
 
 <img src="docs/screenshots/menubar.png" alt="メニューバーメニュー" width="280"/>
