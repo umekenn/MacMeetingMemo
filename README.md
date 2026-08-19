@@ -1,5 +1,12 @@
 # MacMeetingMemo
 
+[![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-lightgrey)](https://github.com/umekenn/MacMeetingMemo)
+[![Swift](https://img.shields.io/badge/Swift-5.9-orange)](https://swift.org)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
+> **ダウンロード（ビルド済み）**
+> [MacMeetingMemo-v1.0.0.zip](https://github.com/umekenn/MacMeetingMemo/raw/main/releases/MacMeetingMemo-v1.0.0.zip) — zip を解凍して `MacMeetingMemo.app` を `/Applications` にコピーするだけで使えます。
+
 会議中のスクリーンショットとテキストメモを、軽量に記録する macOS ネイティブアプリ。
 
 Apple Silicon Mac 向けに最適化されたシンプルな会議記録ツールです。Dock に表示せずメニューバーに常駐し、会議中はフローティングバーを画面最前面に固定して記録を続けます。
