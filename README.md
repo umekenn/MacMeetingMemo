@@ -1,5 +1,7 @@
 # MacMeetingMemo
 
+<img src="docs/screenshots/concept.png" alt="MacMeetingMemo コンセプト" width="720"/>
+
 [![Platform](https://img.shields.io/badge/platform-macOS%2013%2B-lightgrey)](https://github.com/umekenn/MacMeetingMemo)
 [![Swift](https://img.shields.io/badge/Swift-5.9-orange)](https://swift.org)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
