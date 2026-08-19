@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBCCA41F555046ACB60419DA /* ControlBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338218D243B411EBDE4334E /* ControlBarView.swift */; };
+		491EB463C03F49729877BE46 /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511F992D9A694A9286C26EF3 /* MenuBarPopoverView.swift */; };
+		D088B9B3C973463A9D62EFA2 /* NewMeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52059DCA3814D529F67BE60 /* NewMeetingView.swift */; };
+		DDA55F1AB6A4453291FA8814 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B556EEE99A4A00B939B86D /* SettingsView.swift */; };
+		1911E92C931E48C988AA2303 /* CaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366287925F8A4DD585F56756 /* CaptureManager.swift */; };
+		87AFD8D8C4F7497A8082268C /* FileOutputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B1939B503419DAC57A497 /* FileOutputManager.swift */; };
+		65B05A38054E45198DF157A6 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BB9FC644ED4FF7BD828E8E /* MenuBarController.swift */; };
+		37AE9360AB6F418A816D277B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C128463399A46B5A6DAA316 /* SessionManager.swift */; };
+		AA11BB22CC33DD44EE55FF66 /* OCRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22CC33DD44EE55FF6600AA /* OCRManager.swift */; };
+		5FBABBB2567F412FA692DB28 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594CD518872487BAE77E979 /* AppSettings.swift */; };
+		D8D6142453614355ABBBEFA0 /* SessionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5371A1BCF2F14DFEA482364C /* SessionModels.swift */; };
+		45D4D2E4046344B9B157DA2A /* MeetingMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AE9A9A9D77435A9EA8B7F5 /* MeetingMemoApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4338218D243B411EBDE4334E /* ControlBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlBarView.swift; sourceTree = "<group>"; };
+		511F992D9A694A9286C26EF3 /* MenuBarPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopoverView.swift; sourceTree = "<group>"; };
+		A52059DCA3814D529F67BE60 /* NewMeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeetingView.swift; sourceTree = "<group>"; };
+		06B556EEE99A4A00B939B86D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		366287925F8A4DD585F56756 /* CaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureManager.swift; sourceTree = "<group>"; };
+		558B1939B503419DAC57A497 /* FileOutputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOutputManager.swift; sourceTree = "<group>"; };
+		17BB9FC644ED4FF7BD828E8E /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		7C128463399A46B5A6DAA316 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		BB22CC33DD44EE55FF6600AA /* OCRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRManager.swift; sourceTree = "<group>"; };
+		E594CD518872487BAE77E979 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		5371A1BCF2F14DFEA482364C /* SessionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModels.swift; sourceTree = "<group>"; };
+		E8AE9A9A9D77435A9EA8B7F5 /* MeetingMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingMemoApp.swift; sourceTree = "<group>"; };
+		B2653135DD844EF7BF1DEF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC675835F2B490F896A9132 /* MeetingMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeetingMemo.entitlements; sourceTree = "<group>"; };
+		4EECF4A74DFD4793AEB99D4B /* MacMeetingMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacMeetingMemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64C4F985FA984ADF97672EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1268FC1D3D4E4401BFE4CAB3 = {
+			isa = PBXGroup;
+			children = (
+				6D31A2143E1445D4A4204DF8 /* Sources */,
+				DDAFB0A99E5F4F1BBBF0E4F3 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		6D31A2143E1445D4A4204DF8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E8AE9A9A9D77435A9EA8B7F5 /* MeetingMemoApp.swift */,
+				68C62A94430C4E53A3F26A12 /* Views */,
+				B702AD78A5DD48DA8DC9DB24 /* Managers */,
+				2EAA600DF1954225A581DE74 /* Models */,
+			);
+			name = Sources;
+			path = "Sources/MeetingMemo";
+			sourceTree = "<group>";
+		};
+		68C62A94430C4E53A3F26A12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4338218D243B411EBDE4334E /* ControlBarView.swift */,
+				511F992D9A694A9286C26EF3 /* MenuBarPopoverView.swift */,
+				A52059DCA3814D529F67BE60 /* NewMeetingView.swift */,
+				06B556EEE99A4A00B939B86D /* SettingsView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B702AD78A5DD48DA8DC9DB24 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				366287925F8A4DD585F56756 /* CaptureManager.swift */,
+				558B1939B503419DAC57A497 /* FileOutputManager.swift */,
+				17BB9FC644ED4FF7BD828E8E /* MenuBarController.swift */,
+				7C128463399A46B5A6DAA316 /* SessionManager.swift */,
+				BB22CC33DD44EE55FF6600AA /* OCRManager.swift */,
+			);
+			name = Managers;
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2EAA600DF1954225A581DE74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E594CD518872487BAE77E979 /* AppSettings.swift */,
+				5371A1BCF2F14DFEA482364C /* SessionModels.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDAFB0A99E5F4F1BBBF0E4F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2653135DD844EF7BF1DEF66 /* Info.plist */,
+				9EC675835F2B490F896A9132 /* MeetingMemo.entitlements */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41D8772D799242E7BE20E50E /* MacMeetingMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A383ED23FDFD4209820E5E69 /* Build configuration list for PBXNativeTarget "MacMeetingMemo" */;
+			buildPhases = (
+				D35F641C4FDE438BB6F48D35 /* Sources */,
+				64C4F985FA984ADF97672EEA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacMeetingMemo;
+			productName = "MacMeetingMemo";
+			productReference = 4EECF4A74DFD4793AEB99D4B /* MacMeetingMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E515ACE55866447996C8DCF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 353FE4146F9A44B0A2C13FE5 /* Build configuration list for PBXProject "MacMeetingMemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+				Base,
+			);
+			mainGroup = 1268FC1D3D4E4401BFE4CAB3;
+			productRefGroup = 1268FC1D3D4E4401BFE4CAB3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41D8772D799242E7BE20E50E /* MacMeetingMemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D35F641C4FDE438BB6F48D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCCA41F555046ACB60419DA /* ControlBarView.swift in Sources */,
+				491EB463C03F49729877BE46 /* MenuBarPopoverView.swift in Sources */,
+				D088B9B3C973463A9D62EFA2 /* NewMeetingView.swift in Sources */,
+				DDA55F1AB6A4453291FA8814 /* SettingsView.swift in Sources */,
+				1911E92C931E48C988AA2303 /* CaptureManager.swift in Sources */,
+				87AFD8D8C4F7497A8082268C /* FileOutputManager.swift in Sources */,
+				65B05A38054E45198DF157A6 /* MenuBarController.swift in Sources */,
+				37AE9360AB6F418A816D277B /* SessionManager.swift in Sources */,
+				AA11BB22CC33DD44EE55FF66 /* OCRManager.swift in Sources */,
+				5FBABBB2567F412FA692DB28 /* AppSettings.swift in Sources */,
+				D8D6142453614355ABBBEFA0 /* SessionModels.swift in Sources */,
+				45D4D2E4046344B9B157DA2A /* MeetingMemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7DB8D761C1104897BC3775C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		A30298C1C7E841E2A2CC0695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				MAACOSX_DEPLOYMENT_TARGET = 13.0;
+				SWIFT_VERSION = 5.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		31C20D2C308A4F848FA9BD86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				CODE_SIGN_ENTITLEMENTS = Resources/MeetingMemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macmeetingmemo.app";
+				PRODUCT_NAME = "MacMeetingMemo";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		4EFFC8C340284AC7A86D83F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				CODE_SIGN_ENTITLEMENTS = Resources/MeetingMemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macmeetingmemo.app";
+				PRODUCT_NAME = "MacMeetingMemo";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		353FE4146F9A44B0A2C13FE5 /* Build configuration list for PBXProject "MacMeetingMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB8D761C1104897BC3775C8 /* Debug */,
+				A30298C1C7E841E2A2CC0695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A383ED23FDFD4209820E5E69 /* Build configuration list for PBXNativeTarget "MacMeetingMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C20D2C308A4F848FA9BD86 /* Debug */,
+				4EFFC8C340284AC7A86D83F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = E515ACE55866447996C8DCF5 /* Project object */;
+}

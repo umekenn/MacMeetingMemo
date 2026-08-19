@@ -1,0 +1,37 @@
+name: MacMeetingMemo
+options:
+  bundleIdPrefix: com.macmeetingmemo
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  indentWidth: 4
+  tabWidth: 4
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    PRODUCT_BUNDLE_IDENTIFIER: com.macmeetingmemo.app
+
+targets:
+  MacMeetingMemo:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: Sources/MeetingMemo
+    resources:
+      - path: Resources/Info.plist
+      - path: Resources/MeetingMemo.entitlements
+    settings:
+      base:
+        PRODUCT_NAME: "MacMeetingMemo"
+        INFOPLIST_FILE: Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Resources/MeetingMemo.entitlements
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        PRODUCT_BUNDLE_IDENTIFIER: com.macmeetingmemo.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"

@@ -1,0 +1,32 @@
+# Xcode
+*.xcworkspace
+xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+**/.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Build artifacts
+*.o
+*.d
+*.app
+*.ipa
+*.dSYM
+
+# Credentials / signing
+*.p12
+*.mobileprovision
+
+# Editor
+.vscode/
+*.swp
+*~
