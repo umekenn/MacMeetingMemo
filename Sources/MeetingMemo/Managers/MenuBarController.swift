@@ -31,8 +31,14 @@ class MenuBarController {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
 
         if let button = statusItem?.button {
-            button.image = NSImage(systemSymbolName: "video.fill", accessibilityDescription: "MacMeetingMemo")
-            button.image?.isTemplate = true
+            if let img = NSImage(named: "MenuBarIcon") {
+                img.isTemplate = true
+                button.image = img
+            } else {
+                // フォールバック: SF Symbols
+                button.image = NSImage(systemSymbolName: "camera.and.pencil", accessibilityDescription: "MacMeetingMemo")
+                button.image?.isTemplate = true
+            }
             // 左クリック・右クリックどちらも同じアクション
             button.action = #selector(handleButtonClick(_:))
             button.target = self
@@ -177,9 +183,19 @@ class MenuBarController {
     // MARK: - Update Status Icon When Recording
 
     func updateStatusIcon(isRecording: Bool) {
-        let symbolName = isRecording ? "record.circle.fill" : "video.fill"
-        statusItem?.button?.image = NSImage(systemSymbolName: symbolName, accessibilityDescription: "MacMeetingMemo")
-        statusItem?.button?.image?.isTemplate = !isRecording
+        if isRecording {
+            // 録画中は赤丸 SF Symbol でステータスを示す
+            statusItem?.button?.image = NSImage(systemSymbolName: "record.circle.fill", accessibilityDescription: "MacMeetingMemo")
+            statusItem?.button?.image?.isTemplate = false
+        } else {
+            if let img = NSImage(named: "MenuBarIcon") {
+                img.isTemplate = true
+                statusItem?.button?.image = img
+            } else {
+                statusItem?.button?.image = NSImage(systemSymbolName: "camera.and.pencil", accessibilityDescription: "MacMeetingMemo")
+                statusItem?.button?.image?.isTemplate = true
+            }
+        }
     }
 }
 
