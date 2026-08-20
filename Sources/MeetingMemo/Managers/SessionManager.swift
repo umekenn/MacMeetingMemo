@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import AppKit
+import ScreenCaptureKit
 
 // MARK: - Session Manager
 
@@ -27,6 +28,7 @@ class SessionManager: ObservableObject {
 
     private var timer: Timer?
     private var autoCaptureTimer: Timer?
+    private var windowWatcherTimer: Timer?
     private var settings: AppSettings?
 
     private init() {}
@@ -387,6 +389,8 @@ class SessionManager: ObservableObject {
                 }
             }
         }
+
+        startWindowWatcher()
     }
 
     private func stopTimers() {
@@ -394,6 +398,38 @@ class SessionManager: ObservableObject {
         timer = nil
         autoCaptureTimer?.invalidate()
         autoCaptureTimer = nil
+        windowWatcherTimer?.invalidate()
+        windowWatcherTimer = nil
+    }
+
+    // MARK: - Window Watcher
+
+    /// キャプチャ対象ウィンドウが閉じられたことを検知して自動で会議を終了する。
+    /// ディスプレイキャプチャの場合は監視しない。
+    private func startWindowWatcher() {
+        windowWatcherTimer?.invalidate()
+        windowWatcherTimer = nil
+
+        // ウィンドウ選択時のみ監視する
+        guard let target = currentSession?.captureTarget,
+              target.type == .window,
+              let watchedWindowID = target.windowID else { return }
+
+        windowWatcherTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { [weak self] _ in
+            Task { @MainActor [weak self] in
+                guard let self, self.isRecording else { return }
+                do {
+                    let content = try await SCShareableContent.excludingDesktopWindows(false, onScreenWindowsOnly: false)
+                    let stillExists = content.windows.contains { $0.windowID == watchedWindowID }
+                    if !stillExists {
+                        // ウィンドウが消えた → 自動終了
+                        self.endSession()
+                    }
+                } catch {
+                    // SCShareableContent の取得失敗は無視（一時的なエラーの可能性）
+                }
+            }
+        }
     }
 
     // MARK: - Persistence Helpers
