@@ -15,7 +15,7 @@ Apple Silicon Mac 向けに最適化されたシンプルな会議記録ツー�
 
 ## ⬇️ ダウンロード
 
-**[MacMeetingMemo-v1.0.1.zip](releases/MacMeetingMemo-v1.0.1.zip)** をダウンロードして zip を解凍し、`MacMeetingMemo.app` を `/Applications` にコピーするだけで使えます。
+**[MacMeetingMemo-v1.0.2.zip](releases/MacMeetingMemo-v1.0.2.zip)** をダウンロードして zip を解凍し、`MacMeetingMemo.app` を `/Applications` にコピーするだけで使えます。
 
 > **初回起動時の注意**  
 > macOS のセキュリティ確認が出た場合は、Finder で右クリック → 「開く」を選択してください。  
